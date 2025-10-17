@@ -1242,4 +1242,73 @@ img.img-fluid {
     font-size: 20px;
   }
 }
+/* ===================================
+   NAVBAR MOBILE OPTIMIZATION
+   =================================== */
+@media (max-width: 768px) {
+
+  /* Top bar (social icons + contact info) */
+  .site-navbar-top .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-navbar-top .col-6 {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .site-navbar-top a {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .site-navbar-top .d-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .site-navbar-top .icon-envelope,
+  .site-navbar-top .icon-phone {
+    display: none; /* optional: hides duplicate icons to save space */
+  }
+
+  /* Main logo + menu */
+  .site-navbar {
+    padding: 10px 15px;
+  }
+
+  .site-navbar .site-logo a {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .site-navbar .text-right {
+    text-align: center !important;
+  }
+
+  /* Mobile menu button (hamburger) */
+  .site-menu-toggle {
+    display: inline-block !important;
+  }
+
+  .site-menu.js-clone-nav {
+    display: none !important;
+  }
+
+  /* Dropdowns look cleaner on small screens */
+  .site-navigation .dropdown {
+    position: static;
+    background: #f9f9f9;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Prevent overflow issues */
+  .site-navbar-wrap {
+    overflow: hidden;
+  }
+}
 
