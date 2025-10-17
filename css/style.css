@@ -1077,4 +1077,38 @@ a {
   aspect-ratio: 3 / 2; /* Keeps 600x400 proportion */
   object-fit: cover;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.site-navbar .site-navigation {
+  flex-wrap: wrap;
+}
+.site-blocks-cover {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: scroll;
+}
+.site-navbar-top a {
+  margin: 0 6px;
+}
+/* --- Mobile Optimization Fixes --- */
+.site-navbar .site-navigation {
+  flex-wrap: wrap;
+}
+.site-blocks-cover {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: scroll;
+}
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.site-navbar-top a {
+  margin: 0 6px;
+}
+.footer-heading {
+  color: #007bff;
+}
 
