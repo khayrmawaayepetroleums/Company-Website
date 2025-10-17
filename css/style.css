@@ -1358,5 +1358,60 @@ img.img-fluid {
     font-size: 13px;
   }
 }
+/* 1️⃣ Make all elements adjust to screen width */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* 2️⃣ Images scale automatically */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3️⃣ Text containers wrap properly */
+p, h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
+}
+
+/* 4️⃣ Prevent layout from stretching wider than viewport */
+.container, .row, .col, section, div {
+  box-sizing: border-box;
+}
+
+/* 5️⃣ Responsive grids (Bootstrap-like) */
+@media (max-width: 992px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col, [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* 6️⃣ General mobile padding and spacing */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
