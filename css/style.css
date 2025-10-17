@@ -1111,4 +1111,70 @@ img.img-fluid {
 .footer-heading {
   color: #007bff;
 }
+/* ===================================
+   MOBILE OPTIMIZATION ADJUSTMENTS
+   =================================== */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .site-navbar-wrap .site-navbar {
+    padding: 10px 15px;
+  }
+  .site-logo a {
+    font-size: 22px;
+  }
+  .site-menu {
+    display: none;
+  }
+  .site-menu-toggle {
+    display: inline-block !important;
+  }
+
+  /* Hero section */
+  .site-blocks-cover.inner-page {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
+  .site-blocks-cover h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  /* About section text/images */
+  .section-about .row > div {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .section-about img {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Cards & columns */
+  .site-block-feature-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-block-feature-2 .mr-3 {
+    margin: 0 0 15px 0 !important;
+  }
+
+  /* Footer */
+  .site-footer .row > div {
+    margin-bottom: 25px;
+  }
+  .site-footer {
+    text-align: center;
+  }
+  .footer-heading {
+    font-size: 18px;
+  }
+
+  /* General spacing */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
